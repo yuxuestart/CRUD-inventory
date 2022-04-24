@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory CRUD</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="item" placeholder="New Item">
+        <button class="btn btn-primary" id="insert-item">Add</button>
+    </div>
+
+    <br><br>
+    <div class="container">
+        <table class="table table-dark table-stripe" id="inventory-table">
+            <tr>
+                <th>Item</th>
+                <th>Edit</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td><button class="btn btn-success">Edit</button></td>
+                <td><button class="btn btn-warning">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td><button class="btn btn-success">Edit</button></td>
+                <td><button class="btn btn-warning">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
